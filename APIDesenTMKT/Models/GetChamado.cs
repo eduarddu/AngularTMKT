@@ -13,7 +13,7 @@ namespace APIDesenTMKT.Models
 
         //COLUNAS
         public int ChaCodigo { get; set; }
-        public DateTime ChaDataAbertura { get; set; } // Possivel conversão para string;
+        public string ChaDataAbertura { get; set; } // Possivel conversão para string;
         public string ChaSolicitante { get; set; }
         public string TpcDescricao { get; set; }
         public string CliNome { get; set; }

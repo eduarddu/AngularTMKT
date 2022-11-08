@@ -4,12 +4,8 @@ using System;
 using System.Collections.Generic;
 using APIDesenTMKT.Models;
 using System.Linq;
-using System.Web.Http;
-using System.Net.Http;
 using System.Threading.Tasks;
-using System.Data;
-using System.Net;
-using System.Net.Http.Formatting;
+
 
 namespace APIDesenTMKT.Controllers
 {

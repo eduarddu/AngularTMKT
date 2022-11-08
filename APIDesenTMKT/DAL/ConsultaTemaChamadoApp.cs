@@ -19,7 +19,7 @@ namespace APIDesenTMKT.DAL
             conn = configuration.GetConnectionString("conn");
         }
 
-        public List<ConsultaTemaChamadoApp> GetConsultaTemaChamadoApp(int AplCodigo)
+        public List<ConsultaTemaChamadoApp> GetConsultaTemaChamadoApp(int aplCodigo)
         {
             System.Data.SqlClient.SqlConnection conexao = new SqlConnection(conn);
             SqlCommand comando = new SqlCommand();
@@ -31,7 +31,7 @@ namespace APIDesenTMKT.DAL
             comando.CommandType = CommandType.StoredProcedure;
             comando.CommandText = "STP_GET_TEMA_CHAMADO_APLICACAO";
             comando.CommandTimeout = 3000;
-            comando.Parameters.Add("@APL_CODIGO", SqlDbType.Int).Value = AplCodigo;
+            comando.Parameters.Add("@APL_CODIGO", SqlDbType.Int).Value = aplCodigo;
             da = new SqlDataAdapter(comando);
             da.Fill(ds, "Dados");
             conexao.Close();
@@ -41,8 +41,8 @@ namespace APIDesenTMKT.DAL
                 for (int i = 0; i < ds.Tables[0].Rows.Count; i++)
                 {
                     arrayObjConsTema.Add(new Models.ConsultaTemaChamadoApp());
-                    arrayObjConsTema[i].AplCodigo = Convert.ToInt32(ds.Tables[0].Rows[i]["ATC_CODIGO"]);
-                    arrayObjConsTema[i].AtcDescricao = ds.Tables[0].Rows[i]["ATC_DESCRICAO"].ToString();
+                    arrayObjConsTema[i].aplCodigo = Convert.ToInt32(ds.Tables[0].Rows[i]["ATC_CODIGO"]);
+                    arrayObjConsTema[i].atcDescricao = ds.Tables[0].Rows[i]["ATC_DESCRICAO"].ToString();
                 }
             }
             return arrayObjConsTema;

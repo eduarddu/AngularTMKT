@@ -4,13 +4,7 @@ using System;
 using System.Collections.Generic;
 using APIDesenTMKT.Models;
 using System.Linq;
-using System.Web.Http;
-using System.Net.Http;
 using System.Threading.Tasks;
-using System.Data;
-using System.Net;
-using System.Net.Http.Formatting;
-
 namespace APIDesenTMKT.Controllers
 {
     public class GetChamadosController: ControllerBase
@@ -46,13 +40,15 @@ namespace APIDesenTMKT.Controllers
         [HttpGet]
         [Route("GetEncerraChamado")]
 
-        public List<EncerraChamado> GetEncerraChamado(string usuario)
+        public List<HistoricoChamado> GetEncerraChamado(string usuario)
         {
-            List<EncerraChamado> getEncerra = new List<EncerraChamado>();
+            List<HistoricoChamado> getEncerra = new List<HistoricoChamado>();
             DAL.EncherraChamadoDAL dal = new DAL.EncherraChamadoDAL(this.configuration);
             getEncerra = dal.GetEncerraChamado(usuario);
             return getEncerra;
 
         }
     }
+
+    
 }

@@ -9,10 +9,10 @@ namespace APIDesenTMKT.Models
     public class ConsultaTemaChamadoApp
     {
         //PARÂMETRO
-        public int AplCodigo { get; set; }
+        public int aplCodigo { get; set; }
 
         //COLUNAS
-        public int AtcCodigo { get; set; }
-        public string AtcDescricao { get; set; }
+        public int atcCodigo { get; set; }
+        public string atcDescricao { get; set; }
     }
 }

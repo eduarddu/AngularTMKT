@@ -24,11 +24,11 @@ namespace APIDesenTMKT.Controllers
         [HttpGet]
         [Route("GetConsultaTemaChamadoApp")]
 
-        public List<ConsultaTemaChamadoApp> GetConsultaTemaChamadoApp(int AplCodigo)
+        public List<ConsultaTemaChamadoApp> GetConsultaTemaChamadoApp(int aplCodigo)
         {
             List<ConsultaTemaChamadoApp> tema = new List<ConsultaTemaChamadoApp>();
             DAL.ConsultaTemaChamadoAppDAL dal = new DAL.ConsultaTemaChamadoAppDAL(this.configuration);
-            tema = dal.GetConsultaTemaChamadoApp(AplCodigo);
+            tema = dal.GetConsultaTemaChamadoApp(aplCodigo);
             return tema;
         }
 

@@ -2,20 +2,22 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using APIDesenTMKT.Controllers;
 using APIDesenTMKT.Models;
-
+using Microsoft.AspNetCore.Http;
 
 namespace APIDesenTMKT.Models
 {
     public class AbreChamado
     {
         //PARÂMETROS
-        public int CtrCodigo { get; set; }
-        public string AgtCodigo { get; set; }
-        public int AplCodigo { get; set; }
-        public int AtcCodigo { get; set; }
-        public string Descricao { get; set; }
-        public string Titulo { get; set; }
        
+        public int ctrCodigo { get; set; }
+        public string agtCodigo { get; set; }
+        public int aplCodigo { get; set; }
+        public int atcCodigo { get; set; }
+        public string descricao { get; set; }
+        public string titulo { get; set; }
+        public int chaCodigo { get; set; }
     }
 }

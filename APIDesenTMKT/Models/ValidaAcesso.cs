@@ -23,12 +23,12 @@ namespace APIDesenTMKT.Models
         public string CtrDescricao { get; set; }
         public string CgoDescricao { get; set; }
 
-        public bool AcessoVal = false;
+        public bool acessoVal = false;
         public string MsgAcesso { get; set; }
 
-        
 
-      
+
+
 
     }
 }

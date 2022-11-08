@@ -44,6 +44,22 @@
               "target": "Package",
               "version": "[2.2.0, )"
             },
+            "Microsoft.Azure.Storage.DataMovement": {
+              "target": "Package",
+              "version": "[2.0.4, )"
+            },
+            "Microsoft.Bot.Builder.Integration.AspNet.Core": {
+              "target": "Package",
+              "version": "[4.17.1, )"
+            },
+            "Microsoft.Bot.Builder.Integration.AspNet.WebApi": {
+              "target": "Package",
+              "version": "[4.17.1, )"
+            },
+            "Microsoft.Bot.Configuration": {
+              "target": "Package",
+              "version": "[4.17.1, )"
+            },
             "Swashbuckle.AspNetCore": {
               "target": "Package",
               "version": "[6.4.0, )"
@@ -59,6 +75,10 @@
             "System.Net.Http.Formatting.Extension": {
               "target": "Package",
               "version": "[5.2.3, )"
+            },
+            "jQuery.FileUpload": {
+              "target": "Package",
+              "version": "[10.4.0, )"
             }
           },
           "imports": [

@@ -1,5 +1,6 @@
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
+using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.HttpsPolicy;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Configuration;
@@ -33,13 +34,17 @@ namespace APIDesenTMKT
                 {
                     builder.WithOrigins("https://localhost:44350")
                             .AllowAnyHeader()
+                            .AllowAnyMethod()
+                            .AllowAnyHeader()
                             .AllowAnyMethod();
+                    
 
                 });
             });
 
-           
+            
             services.AddControllers();
+            services.AddSingleton<IHttpContextAccessor, HttpContextAccessor>();
             services.AddSwaggerGen(c =>
             {
                 c.SwaggerDoc("v1", new OpenApiInfo { Title = "APIDesenTMKT", Version = "v1" });
@@ -55,6 +60,8 @@ namespace APIDesenTMKT
                 app.UseSwagger();
                 app.UseSwaggerUI(c => c.SwaggerEndpoint("/swagger/v1/swagger.json", "APIDesenTMKT v1"));
             }
+
+            app.UseStaticFiles();
 
             app.UseHttpsRedirection();
 

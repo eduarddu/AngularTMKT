@@ -44,12 +44,12 @@ namespace APIDesenTMKT.DAL
                     {
                         arrayObjGetCha.Add(new Models.GetChamado());
                         arrayObjGetCha[i].ChaCodigo = Convert.ToInt32(ds.Tables[0].Rows[i]["CHA_CODIGO"]);
-                        arrayObjGetCha[i].ChaDataAbertura = Convert.ToDateTime(ds.Tables[0].Rows[0]["CHA_DATAABERTURA"].ToString());
+                        arrayObjGetCha[i].ChaDataAbertura = ds.Tables[0].Rows[i]["CHA_DATAABERTURA"].ToString();
                         arrayObjGetCha[i].ChaSolicitante = ds.Tables[0].Rows[i]["CHA_SOLICITANTE"].ToString();
                         arrayObjGetCha[i].TpcDescricao = ds.Tables[0].Rows[i]["TPC_DESCRICAO"].ToString();
                         arrayObjGetCha[i].CliNome = ds.Tables[0].Rows[i]["CLI_NOME"].ToString();
                         arrayObjGetCha[i].AplNome = ds.Tables[0].Rows[i]["APL_NOME"].ToString();
-                        arrayObjGetCha[i].ChaPrazo = ds.Tables[0].Rows[0]["CHA_PRAZO"].ToString();
+                        arrayObjGetCha[i].ChaPrazo = ds.Tables[0].Rows[i]["CHA_PRAZO"].ToString();
                         arrayObjGetCha[i].AnlNome = ds.Tables[0].Rows[i]["ANL_NOME"].ToString();
                         arrayObjGetCha[i].ChaDescricao = ds.Tables[0].Rows[i]["CHA_DESCRICAO"].ToString();
                         arrayObjGetCha[i].ChaTitulo = ds.Tables[0].Rows[i]["CHA_TITULO"].ToString();
@@ -70,12 +70,12 @@ namespace APIDesenTMKT.DAL
                         {
                             arrayObjGetCha.Add(new Models.GetChamado());
                             arrayObjGetCha[i].ChaCodigo = Convert.ToInt32(ds.Tables[0].Rows[i]["CHA_CODIGO"]);
-                            arrayObjGetCha[i].ChaDataAbertura = Convert.ToDateTime(ds.Tables[0].Rows[0]["CHA_DATAABERTURA"].ToString());
+                            arrayObjGetCha[i].ChaDataAbertura = ds.Tables[0].Rows[i]["CHA_DATAABERTURA"].ToString();
                             arrayObjGetCha[i].ChaSolicitante = ds.Tables[0].Rows[i]["CHA_SOLICITANTE"].ToString();
                             arrayObjGetCha[i].TpcDescricao = ds.Tables[0].Rows[i]["TPC_DESCRICAO"].ToString();
                             arrayObjGetCha[i].CliNome = ds.Tables[0].Rows[i]["CLI_NOME"].ToString();
                             arrayObjGetCha[i].AplNome = ds.Tables[0].Rows[i]["APL_NOME"].ToString();
-                            arrayObjGetCha[i].ChaPrazo = ds.Tables[0].Rows[0]["CHA_PRAZO"].ToString();
+                            arrayObjGetCha[i].ChaPrazo = ds.Tables[0].Rows[i]["CHA_PRAZO"].ToString();
                             arrayObjGetCha[i].AnlNome = ds.Tables[0].Rows[i]["ANL_NOME"].ToString();
                             arrayObjGetCha[i].ChaDescricao = ds.Tables[0].Rows[i]["CHA_DESCRICAO"].ToString();
                             arrayObjGetCha[i].ChaTitulo = ds.Tables[0].Rows[i]["CHA_TITULO"].ToString();

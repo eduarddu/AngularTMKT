@@ -48,15 +48,17 @@ namespace APIDesenTMKT.DAL
                     objValida[i].CtrCodigo = Convert.ToInt32(ds.Tables[0].Rows[0]["CTR_CODIGO"]);
                     objValida[i].CtrDescricao = ds.Tables[0].Rows[0]["CTR_DESCRICAO"].ToString();
                     objValida[i].CgoDescricao = ds.Tables[0].Rows[0]["CGO_DESCRICAO"].ToString();
-                    objValida[i].AcessoVal = Convert.ToBoolean(ds.Tables[0].Rows[0]["ACESSO_VALIDO"]);
+                    objValida[i].acessoVal = Convert.ToBoolean(ds.Tables[0].Rows[0]["ACESSO_VALIDO"]);
                     objValida[i].MsgAcesso = ds.Tables[0].Rows[0]["MENSAGEM_ACESSO"].ToString();
+
+
                 }
+                
             }
             return objValida;
 
 
         }
 
-        }
     }
-
+}
