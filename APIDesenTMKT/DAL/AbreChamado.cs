@@ -6,6 +6,7 @@ using System.Data;
 using System.Data.SqlClient;
 using Microsoft.Extensions.Configuration;
 using APIDesenTMKT.Models;
+using System.IO;
 
 namespace APIDesenTMKT.DAL
 {
@@ -50,6 +51,20 @@ namespace APIDesenTMKT.DAL
             //return "Demanda " + objAbreChamado.CHACodigo.ToString() + " aberto com a área de desenvolvimento";
 
         }
+
+        public string arquivoBase64()
+        {
+            List<string> relatorio;
+            string pasta = @"C:\Users\885089\Desktop\teste";
+            string arquivo = Path.Combine(pasta, "arquivo.txt");
+
+            Directory.CreateDirectory(pasta);
+            File.Create(arquivo).Dispose();
+            return arquivo;
+            
+        }
+
+        
         
     }
 }

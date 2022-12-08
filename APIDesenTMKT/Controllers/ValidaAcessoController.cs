@@ -19,16 +19,15 @@ namespace APIDesenTMKT.Controllers
             this.configuration = configuration;
         }
 
-
         [HttpGet]
-        
+        [Route("getValidaAcesso")]
 
-        public List<ValidaAcesso> GetValidaAcesso(string matricula, string senha)
+        public List<ValidaAcesso> getValidaAcesso(string AgtCodigo, string Senha)
         {
-            List<ValidaAcesso> acesso = new List<ValidaAcesso>();
+            List<ValidaAcesso> resultado = new List<ValidaAcesso>();
             DAL.ValidaAcessoDAL dal = new DAL.ValidaAcessoDAL(this.configuration);
-            acesso = dal.GetValidaAcesso(matricula, senha);
-            return acesso;
+            resultado = dal.getValidaAcesso(AgtCodigo, Senha);
+            return resultado;
         }
 
     }

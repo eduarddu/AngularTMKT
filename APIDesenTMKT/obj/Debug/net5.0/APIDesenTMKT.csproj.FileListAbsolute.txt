@@ -94,3 +94,4 @@ C:\Users\885089\Desktop\APIDesenTMKT\APIDesenTMKT\bin\Debug\net5.0\runtimes\linu
 C:\Users\885089\Desktop\APIDesenTMKT\APIDesenTMKT\bin\Debug\net5.0\runtimes\linux-x86\native\libMonoPosixHelper.so
 C:\Users\885089\Desktop\APIDesenTMKT\APIDesenTMKT\bin\Debug\net5.0\runtimes\osx\lib\netstandard2.0\Mono.Posix.NETStandard.dll
 C:\Users\885089\Desktop\APIDesenTMKT\APIDesenTMKT\bin\Debug\net5.0\runtimes\osx\native\libMonoPosixHelper.dylib
+C:\Users\885089\Desktop\APIDesenTMKT\APIDesenTMKT\bin\Debug\net5.0\DotNetZip.dll
